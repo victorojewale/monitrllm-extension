@@ -34,7 +34,7 @@ Each report captures the following fields alongside a timestamp and an anonymize
 | `feedback` | Briefly describe your interaction | Free-text description of the conversation |
 | `purpose` | Purpose of this interaction | User's task goal |
 | `outcome` | How did this interaction go? | User's assessment of success |
-| `conversation_link` | Link to this conversation | ChatGPT share URL |
+| `conversation_link` | Link to this conversation | LLM interface share URL |
 | `rating` | Overall satisfaction | Integer 1–5 |
 
 User identity is a UUID generated on first install and stored in `chrome.storage.sync`. No account registration is required. Participants can view and delete their own reports from the extension's options page.
