@@ -1,6 +1,6 @@
 # MonitrLLM
 
-**MonitrLLM** is open-source infrastructure for community-centered evaluation of large language models. A Chrome extension runs alongside ChatGPT and submits audit reports to a Django backend, enabling communities to collect conversation logs paired with user-reported task intent, outcome assessments, and satisfaction ratings.
+**MonitrLLM** is open-source infrastructure for community-centered evaluation of large language models. A Chrome extension runs alongside your LLM chat interface and submits audit reports to a Django backend, enabling communities to collect conversation logs paired with user-reported task intent, outcome assessments, and satisfaction ratings.
 
 This repository contains the full source code for the extension and backend.
 
@@ -139,7 +139,7 @@ MonitrLLM is designed to be forked. Each research team should run their own back
 
 - User identity is a locally generated UUID. No personal information is collected.
 - Participants can delete any of their own reports from the extension's options page at any time.
-- Conversation transcripts are not stored — only the share link. Transcript content is retrieved separately by researchers.
+- Conversation transcripts are not stored , only the share link. Transcript content is retrieved separately by researchers for analysis.
 - The codebase does not implement any tracking, analytics, or third-party data sharing.
 
 ---
