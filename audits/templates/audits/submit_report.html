@@ -1,0 +1,15 @@
+<!-- audits/templates/audits/submit_report.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submit Report</title>
+  </head>
+  <body>
+    <h1>Submit Report</h1>
+    <form method="post">
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

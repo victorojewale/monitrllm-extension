@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Monitr LLM</title>
+  <style>
+    /* General layout and styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.5em;
+      color: #4A90E2;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4A90E2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    #status {
+      text-align: center;
+      margin-top: 10px;
+      color: green;
+    }
+
+    /* Link to view submissions */
+    #view-submissions-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #4A90E2;
+      text-decoration: none;
+    }
+
+    #view-submissions-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="dailyReminder"></div>
+
+  <h1>Monitr LLM Interaction</h1>
+
+  <div id="feedback-form">
+    <label for="feedback">Briefly describe your interaction with ChatGPT:<label>
+        <textarea id="feedback" placeholder="Describe the interaction..."></textarea>
+
+        <label for="purpose">What was the purpose of this interaction? (optional):</label>
+        <input type="text" id="purpose" placeholder="e.g., Creative writing, Research, Casual Inquiry, Just Fun etc.">
+
+        <label for="outcome">How did this interaction go for you?</label>
+        <input type="text" id="outcome"
+          placeholder="Did the AI meet your expectations? Was it helpful, confusing, surprising?">
+
+        <label for="conversationLink">Link to this conversation:</label>
+        <input type="text" id="conversationLink" placeholder="Paste the link to the ChatGPT thread here">
+
+        <label for="rating">Overall, how satisfied were you with this interaction?</label>
+        <input type="number" id="rating" min="1" max="5" step="1" placeholder="1 = Not at all, 5 = Very satisfied"
+          required>
+
+        <button id="submit">Submit</button>
+  </div>
+
+  <p id="status"></p>
+
+  <!-- Link to view submissions -->
+  <a id="view-submissions-link" href="view_reports.html" target="_blank">View Current Submissions</a>
+
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>

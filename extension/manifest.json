@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Monitr LLM Browser Extension",
+  "version": "1.0",
+  "description": "Capture and describe instances of your interactions with ChatGPT.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "windows"
+  ],
+  "action": {
+    "default_title": "Log LLM Interaction"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icons/icon_16x16.png",
+    "48": "icons/icon_48x48.png",
+    "128": "icons/icon_128x128.png"
+  },
+  "options_page": "view_reports.html"
+}

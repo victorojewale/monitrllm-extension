@@ -1,0 +1,19 @@
+<!-- audits/templates/audits/view_reports.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Reports</title>
+  </head>
+  <body>
+    <h1>View Reports</h1>
+    <ul>
+      {% for report in reports %}
+      <li>
+        <strong>{{ report.category }}:</strong> {{ report.feedback }}<br />
+        <em>{{ report.timestamp }}</em>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
