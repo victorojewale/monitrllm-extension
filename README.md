@@ -147,11 +147,14 @@ MonitrLLM is designed to be forked. Each research team should run their own back
 ## Citation
 
 ```bibtex
-@inproceedings{anonymous2026monitrllm,
-  title     = {MonitrLLM: A Community-Centered Evaluation Infrastructure for Large Language Models},
-  author    = {Anonymous},
-  booktitle = {Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society},
-  year      = {2026}
+@misc{ojewale2026monitrllmcommunitycenteredevaluationinfrastructure,
+      title={MonitrLLM: A Community-Centered Evaluation Infrastructure for Large Language Models}, 
+      author={Victor Ojewale and Ro Encarnación and Suresh Venkatasubramanian and Danaé Metaxa},
+      year={2026},
+      eprint={2608.02409},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2608.02409}, 
 }
 ```
 
